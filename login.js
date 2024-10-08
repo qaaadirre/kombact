@@ -1,4 +1,3 @@
-
 function login() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
@@ -9,7 +8,7 @@ function login() {
         localStorage.setItem('loggedIn', 'true');
         // Redirect to scoring page
         window.location.href = 'indexx.html';
-    } else
+    } else {
         document.getElementById('loginMessage').textContent = 'Invalid username or password.';
     }
 }
