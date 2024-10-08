@@ -7,17 +7,28 @@
     <title>qaaa | coin</title>
   </head>
   <body>
+    !doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qaaa | coin</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
     	     <script>
         // Check login status on page load
         window.onload = function() {
             if (localStorage.getItem('loggedIn') !== 'true') {
-                window.location.href = 'login.html';
+                window.location.href = 'index.html';
             }
         };
 
         function logout() {
             localStorage.removeItem('loggedIn');
-            window.location.href = 'login.html';
+            window.location.href = 'index.html';
         }
     </script>
   </body>
